@@ -106,13 +106,14 @@ h4, h5, h6 {
 .here-section .money {
     font-size: 10rem;
     color: var(--text-color);
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 .here-section .deposit {
     font-size: 8rem;
     text-transform: capitalize;
     font-weight: 600;
+    margin-bottom: 35px;
 }
 
 /* Style the "Sign Up" button */
@@ -125,7 +126,7 @@ h4, h5, h6 {
     cursor: pointer;
     transition: 0.3s ease;
     font-size: 3rem; /* Example font size for the button text */
-    margin-top: 20px; /* Add some top margin for spacing */
+    margin-top: 35px; /* Add some top margin for spacing */
     text-transform: capitalize;
 }
 
@@ -142,8 +143,27 @@ h4, h5, h6 {
         height: 200vh;
     }
     .here-section .content {
-        top: 130vh;
+        top: 70vh;
+        height: 100vh;
+        width: 71%;
         font-size: 4rem;
+    }
+
+    
+    .here-section .money {
+        font-size: 6rem; /* Adjust font size for smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .here-section .deposit {
+        font-size: 4rem; /* Adjust font size for smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .sign-up {
+        padding: 20px 40px; /* Adjust padding for smaller screens */
+        font-size: 2rem; /* Adjust font size for smaller screens */
+        margin-top: 20px;
     }
 }
 
