@@ -77,26 +77,26 @@ h4, h5, h6 {
     background-size: cover; /* Cover the entire element */
     background-repeat: no-repeat; /* Prevent repeating the image */
     background-position: center center; /* Center the image both horizontally and vertically */
-    height: 280vh; /* Set a height to ensure the entire viewport is covered */
+    height: 270vh; /* Set a height to ensure the entire viewport is covered */
     width: 100%;
 }
 
 /* Styles for content within the .here-section */
 .here-section .content {
     position: absolute;
-    top: 150vh;
+    top: 152.5vh;
     bottom: 0;
     left: 0;
-    width: 97%;
-    height: 135vh;
+    width: 97.8%;
+    height: 120vh;
     text-align: center;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0, 4) 95%, rgba(0, 0, 0, 5) 100%);
-    backdrop-filter: blur(10%);
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 5, 0.5) 45%, rgba(0, 0, 2, 0.3) 55%, rgba(0, 2, 1, 5) 100%);
+    backdrop-filter: blur(20%);
     overflow: hidden;
     box-shadow: none;
 }
@@ -106,14 +106,14 @@ h4, h5, h6 {
 .here-section .money {
     font-size: 10rem;
     color: var(--text-color);
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 .here-section .deposit {
     font-size: 8rem;
     text-transform: capitalize;
     font-weight: 600;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 /* Style the "Sign Up" button */
@@ -126,7 +126,7 @@ h4, h5, h6 {
     cursor: pointer;
     transition: 0.3s ease;
     font-size: 3rem; /* Example font size for the button text */
-    margin-top: 35px; /* Add some top margin for spacing */
+    margin-top: 20px; /* Add some top margin for spacing */
     text-transform: capitalize;
 }
 
@@ -140,9 +140,11 @@ h4, h5, h6 {
     .here-section {
         background-position: center center; /* Center the image horizontally and vertically */
         background-size: cover;
+        width: 100%;
         height: 200vh;
     }
     .here-section .content {
+        
         top: 70vh;
         height: 100vh;
         width: 71%;
@@ -152,18 +154,18 @@ h4, h5, h6 {
     
     .here-section .money {
         font-size: 6rem; /* Adjust font size for smaller screens */
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .here-section .deposit {
         font-size: 4rem; /* Adjust font size for smaller screens */
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .sign-up {
         padding: 20px 40px; /* Adjust padding for smaller screens */
         font-size: 2rem; /* Adjust font size for smaller screens */
-        margin-top: 20px;
+        margin-top: 10px;
     }
 }
 
@@ -171,7 +173,35 @@ h4, h5, h6 {
     .here-section {
         background-position: center center; /* Center the image horizontally and vertically */
         background-size: cover;
-        height: 100vh;
+        top: 100%;
+        height: 87vh;
+        width: 100%;
+    }
+    .here-section .content {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+        top: 60vh;
+        height: 30vh;
+        width: 100%;
+    }
+
+    .here-section .money {
+        font-size: 4rem; /* Adjust font size for smaller screens */
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .here-section .deposit {
+        font-size: 3rem; /* Adjust font size for smaller screens */
+        margin-bottom: 5px;
+    }
+
+    .sign-up {
+        padding: 20px 40px; /* Adjust padding for smaller screens */
+        font-size: 2rem; /* Adjust font size for smaller screens */
+        margin-top: 5px;
+        margin-bottom: 10px;
     }
 }
 
