@@ -1,0 +1,157 @@
+/* Reset some default styles for the navbar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Example font-family */
+    color: var(--text-color)
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-nav:#1a1841;
+    --bg-button: linear-gradient(to right, #5a057a, #8416ac);
+    --text-color: #fff;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-nav); 
+    padding: 10px 20px;
+    box-shadow: var(--shadow); 
+}
+
+/* Style the logo */
+.logo img {
+    max-height: 40px; /* Adjust the max height as needed */
+}
+
+/* Container for register button and user icon */
+.actions {
+    display: flex; /* Display its children inline */
+    align-items: center; /* Vertically center them */
+    justify-content: space-between;
+}
+
+.register-button {
+    background: var(--bg-button); /* Purple gradient */
+    border: none;
+    color: var(--text-color); /* Text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-right: 20px; /* Add spacing between button and user icon */
+    text-transform: capitalize;
+}
+
+.register-button:hover {
+    background: var(--bg-button); 
+}
+
+/* Style the user icon */
+.user-icon {
+    width: 40px;
+    height: 40px;
+    background-color: transparent; 
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* Add user icon image if available */
+.user-icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+.here-section {
+    background-image: url('../assets/img/Hero-Image.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire element */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-position: center center; /* Center the image both horizontally and vertically */
+    height: 280vh; /* Set a height to ensure the entire viewport is covered */
+    width: 100%;
+}
+
+/* Styles for content within the .here-section */
+.here-section .content {
+    position: absolute;
+    top: 150vh;
+    bottom: 0;
+    left: 0;
+    width: 97%;
+    height: 135vh;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0, 4) 95%, rgba(0, 0, 0, 5) 100%);
+    backdrop-filter: blur(10%);
+    overflow: hidden;
+    box-shadow: none;
+}
+
+
+
+.here-section .money {
+    font-size: 10rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.here-section .deposit {
+    font-size: 8rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+/* Style the "Sign Up" button */
+.sign-up {
+    background: var(--bg-button); /* Button gradient */
+    border: none;
+    color: var(--text-color); /* Text color */
+    padding: 30px 80px; /* Adjust padding for a wider width */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 3rem; /* Example font size for the button text */
+    margin-top: 20px; /* Add some top margin for spacing */
+    text-transform: capitalize;
+}
+
+.sign-up:hover {
+    background: linear-gradient(to right, #8416ac, #5a057a); /* Button gradient on hover */
+}
+
+
+/* Media query for screens with a minimum width of 768px */
+@media (min-width: 768px) and (max-width: 812px){
+    .here-section {
+        background-position: center center; /* Center the image horizontally and vertically */
+        background-size: cover;
+        height: 200vh;
+    }
+    .here-section .content {
+        top: 130vh;
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 390px) and (max-width: 450px) {
+    .here-section {
+        background-position: center center; /* Center the image horizontally and vertically */
+        background-size: cover;
+        height: 100vh;
+    }
+}
+
