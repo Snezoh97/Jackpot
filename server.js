@@ -4,14 +4,12 @@ const app = express();
 app.use(express.static("public"));
 
 app.get("/rest-api", (req, res) => {
-  const buttonRegister = "Register";
   const moneyValue = "$1,600";
   const depositValue = "Deposit money";
 
   res.json({
     money: moneyValue,
     deposit: depositValue,
-    buttonr: buttonRegister,
   });
 });
 
