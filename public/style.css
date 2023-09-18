@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    color: var(--text-color)
 }
 
 h1, h2, h3,
@@ -140,9 +141,9 @@ h4, h5, h6 {
     background: var(--bg-button);
 }
 
+/* --- Media Screens ---- */
 
-/* Media query for screens with a minimum width of 768px */
-@media (min-width: 768px) and (max-width: 812px){
+@media (min-width: 768px) and (max-width: 1024px){
     .here-section {
         background-position: center center;
         background-size: cover;
@@ -151,31 +152,31 @@ h4, h5, h6 {
     }
     .here-section .content {
         
-        top: 70vh;
+        top: 110vh;
         height: 100vh;
-        width: 71%;
+        width: 100%;
         font-size: 4rem;
     }
 
     
     .here-section .money {
-        font-size: 6rem; 
-        margin-bottom: 10px;
+        font-size: 7rem; 
+        margin-bottom: 20px;
     }
 
     .here-section .deposit {
-        font-size: 4rem; 
-        margin-bottom: 10px;
+        font-size: 6rem; 
+        margin-bottom: 20px;
     }
 
     .sign-up {
         padding: 20px 40px; 
-        font-size: 2rem; 
-        margin-top: 10px;
+        font-size: 4rem; 
+        margin-top: 20px;
     }
 }
 
-@media (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 450px) {
     .here-section {
         background-position: center center; 
         background-size: cover;   
@@ -203,8 +204,8 @@ h4, h5, h6 {
     }
 
     .sign-up {
-        padding: 10px 20px; 
-        font-size: 2rem; 
+        padding: 10px 25px; 
+        font-size: 3rem; 
         margin-top: 10px;
         margin-bottom: 40px;
     }
