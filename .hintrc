@@ -5,11 +5,6 @@
   "hints": {
     "compat-api/css": [
       "default",
-      {
-        "ignore": [
-          "backdrop-filter"
-        ]
-      }
     ]
   }
 }
